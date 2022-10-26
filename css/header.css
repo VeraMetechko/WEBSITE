@@ -1,0 +1,147 @@
+.header {
+  width: 100%;
+  z-index: 5;
+  padding: 15px;
+  background-image: url(../img/gudhftgltgloijs.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  z-index: 1;
+  height: 530px;
+}
+.header::before {
+  content: "";
+  background: linear-gradient( to left, rgba(70, 116, 155, 0) 0%, rgba(70, 116, 155, 0.35) 20%, rgba(70, 116, 155, 0.5) 62%, rgba(70, 116, 155, 1) 100% ); ;    
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.header-row {   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,0.9);  
+  border-radius: 45px;
+  padding: 0 50px;
+}
+.header-row:hover {
+  color: #96BD2A;
+}
+.header-row-logo {
+  cursor: pointer; 
+}
+.logo {
+  width: 50px;
+  padding-top: 15px;
+}
+.logo-text {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #46749b;
+  text-transform: uppercase;
+  cursor: pointer;  
+  text-align: center;
+}
+
+.header-row-menu a {
+  text-decoration: none;
+  transition: .2s;
+  color: #46749b;  
+}
+.header-row-menu-list__item:hover {
+  color: #96BD2A; 
+}
+.header-row-menu a:hover {
+  color: #96BD2A;
+}
+.header-row-menu a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color:#96BD2A;
+  display: block;
+  margin-top: 15px;
+  position: relative;
+    
+  }
+.header-row-menu a:hover:after {
+  width: 100%;
+ }
+.header-row-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+  align-content: center;  
+ }
+.header-row-menu-list__item {   
+  margin: 45px 40px 0px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #46749b;
+  text-transform: uppercase;
+  cursor: pointer;  
+  text-align: center;
+  transition: .2s;
+  display: flex;
+  }
+
+  .item:last-child {
+    margin-right: 0;
+  } 
+  .fa-solid {
+    padding-left: 7px;
+  }
+  
+  .header-row-social-network {
+    padding: 40px 0 15px 0;
+  }
+  .header-row-social-network-icons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+   }
+  .header-row-social-network-icons__item {
+    margin-right: 20px;
+  }
+  .header-row-social-network-icons__item:last-child {
+    margin-right: 0;
+  }
+
+  .header-row-social-network-icons__item:hover  {
+    transform: scale(1.4);
+    color: #96BD2A;
+  }
+  .header-row-social-network .fa-brands{
+    font-size: 32px;
+    color: #46749b;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .header-row-social-network .fa-brands:hover  {
+    color: #96BD2A;
+  }
+
+  .header-content {
+    margin: 80px auto 0;
+    width: 100%;
+  }
+  .header-content-title-1 {
+    color:#96BD2A;
+    padding-left: 160px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+       }
+  .header-content-title-2 {
+    color: #ffffff;
+   }
+  .header-content-subtitle {
+    margin-top: 40px;
+    color: #c77f3f;
+    padding-left: 350px;
+  }
